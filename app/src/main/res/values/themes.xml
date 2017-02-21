@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="appTextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">加载中...</item>
+    </style>
+
+    <style name="appEditText" parent="@android:style/Widget.EditText">
+        <!--<item name="android:background">@drawable/shp_login_input_bg</item>-->
+        <item name="android:padding">28px</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="appButton" parent="@android:style/Widget.Button">
+        <!--<item name="android:background">@drawable/sel_login_btn_bg</item>-->
+        <item name="android:text">按钮</item>
+    </style>
+
+    <style name="appListView" parent="@android:style/Widget.AbsListView">
+        <item name="android:clipToPadding">false</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="android:headerDividersEnabled">true</item>
+    </style>
+
+    <style name="appDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--.Light.NoActionBar-->
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/transparent</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/transparent</item>
+
+        <!--Navigation bar color(for v21)-->
+        <!--<item name="android:navigationBarColor">@color/accent_material_light</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- 使用 API Level 22 編譯的話，要拿掉前綴字android: -->
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:textViewStyle">@style/appTextView</item>
+        <item name="android:editTextStyle">@style/appEditText</item>
+        <item name="android:buttonStyle">@style/appButton</item>
+        <item name="android:listViewStyle">@style/appListView</item>
+    </style>
+
+    <style name="AppFullscreen" parent="@style/AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

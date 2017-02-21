@@ -1,0 +1,3 @@
+[submodule "waterdroplistview"]
+	path = waterdroplistview
+	url = http://git.komect.net/Hulian_IoT/android_waterdroplistview.git
